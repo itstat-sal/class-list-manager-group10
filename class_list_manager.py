@@ -1,4 +1,4 @@
-# Class List Manager - Group 3
+# Class List Manager - Group 10 -
 # MIS 211 Bonus Assignment (GitHub Teamwork)
 
 names = ["Tala","",""]
