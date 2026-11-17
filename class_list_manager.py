@@ -6,13 +6,14 @@ names = ["Tala","Hessa",""]
 
 # ===== Each student adds her function BELOW this line =====
 
-# Written by: Tala (task 4)
-def longest_name(names):
-    longest = names[0]                  # variable: the longest name so far
-    for name in names:                  # loop: check every name in the list
-        if len(name) > len(longest):    # if: this name is longer
-            longest = name              # update the longest name
-    return longest                      # return the longest name found
+# Written by: Tala (task 7)
+def count_vowels(name):
+    vowels = "aeiou"                     # variable: the vowel letters
+    count = 0                            # variable: number of vowels found
+    for letter in name.lower():          # loop: check each letter in the name
+        if letter in vowels:             # if: the letter is a vowel
+            count += 1                   # increase the vowel count
+    return count                         # return the total number of vowels
 
 # Written by: Hessa (task 6)
 def to_upper(names):
@@ -24,7 +25,7 @@ def to_upper(names):
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
-    print("Longest name:", longest_name(names))
+    print("Number of vowels:", count_vowels(names[0]))
     print("Names in capital letters:", to_upper(names))
 
 
