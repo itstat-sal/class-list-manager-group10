@@ -12,9 +12,9 @@ def count_names(names):
 
 # Written by: Hessa (task 6)
 def to_upper(names):
-    upper_list = []
-    for name in names:
-        upper_list.append(name.upper())
+    upper_list = []                      # variable: new empty list
+    for name in names:                   # loop: check every name in the list
+        upper_list.append(name.upper())  # add the name in capital letters
     return upper_list
 
 def main():
