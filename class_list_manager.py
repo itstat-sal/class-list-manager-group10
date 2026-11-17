@@ -1,19 +1,20 @@
 # Class List Manager - Group 10 -
 # MIS 211 Bonus Assignment (GitHub Teamwork)
 
-names = ["Tala","Hessa",""]
+names = ["Tala","Hessa","Kadi"]
 
 
 # ===== Each student adds her function BELOW this line =====
 
 # Written by: Tala (task 7)
 def count_vowels(name):
-    vowels = "aeiou"                     # variable: the vowel letters
-    count = 0                            # variable: number of vowels found
-    for letter in name.lower():          # loop: check each letter in the name
-        if letter in vowels:             # if: the letter is a vowel
-            count += 1                   # increase the vowel count
-    return count                         # return the total number of vowels
+    vowels = "aeiou"                     # variable: vowel letters
+    count = 0                            # variable: number of vowels
+    for letter in name.lower():          # loop: check each letter
+        if letter in vowels:             # if: this letter is a vowel
+            count += 1                   # increase the count
+    return count                         # return the total number
+
 
 # Written by: Hessa (task 6)
 def to_upper(names):
@@ -25,7 +26,7 @@ def to_upper(names):
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
-    print("Number of vowels:", count_vowels(names[0]))
+    print("Vowel count for each name:", [(name, count_vowels(name)) for name in names])
     print("Names in capital letters:", to_upper(names))
 
 
