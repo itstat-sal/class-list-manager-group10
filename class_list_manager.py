@@ -6,9 +6,13 @@ names = ["Tala","Hessa",""]
 
 # ===== Each student adds her function BELOW this line =====
 
-# Written by: Tala (task 1)
-def count_names(names):
-    return len(names)
+# Written by: Tala (task 4)
+def longest_name(names):
+    longest = names[0]                  # variable: the longest name so far
+    for name in names:                  # loop: check every name in the list
+        if len(name) > len(longest):    # if: this name is longer
+            longest = name              # update the longest name
+    return longest                      # return the longest name found
 
 # Written by: Hessa (task 6)
 def to_upper(names):
@@ -20,7 +24,7 @@ def to_upper(names):
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
-    print("Number of names:", count_names(names))
+    print("Longest name:", longest_name(names))
     print("Names in capital letters:", to_upper(names))
 
 
