@@ -26,8 +26,8 @@ def to_upper(names):
 
 # Written by: Kadi (task 3)
 def sort_names(names):                   # function: sort the names alphabetically
-sorted_names = sorted(names)             # variable: store the sorted names
-return sorted_names                      # return the sorted list
+    sort_names = sorted(names)           # variable: store the sorted names
+    return sort_names                    # return the sorted list
 
 def main():
     print("Welcome to the Class List Manager!")
@@ -37,4 +37,3 @@ def main():
     print("Sorted names:", sort_names(names))
 
 main()
-
