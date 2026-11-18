@@ -6,4 +6,4 @@ A Python program that manages a class list using lists and strings.
 |---------|----------|
 | Tala    | count_vowels |
 | Hessa | to_upper |
-| Kadi | count_names |
+| Kadi | sort_names |
