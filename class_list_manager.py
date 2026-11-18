@@ -6,6 +6,13 @@ names = ["Tala","Hessa","Kadi"]
 
 # ===== Each student adds her function BELOW this line =====
 
+
+# Written by: Kadi (task 3)
+def sort_names(names):                  # function: sort the names alphabetically
+sorted_names = sorted(names)        # variable: store the sorted names
+return sorted_names                 # return the sorted list
+
+
 # Written by: Tala (task 7)
 def count_vowels(name):
     vowels = "aeiou"                     # variable: vowel letters
@@ -28,7 +35,7 @@ def main():
     print("Class list:", names)
     print("Vowel count for each name:", [(name, count_vowels(name)) for name in names])
     print("Names in capital letters:", to_upper(names))
-
+    print("Sorted names:", sort_names(names))
 
 main()
 
